@@ -1,5 +1,5 @@
 module OmniAuth
-  module Windowslive
-    VERSION = "0.0.11"
+  module GrooveMusic
+    VERSION = '0.0.1'
   end
 end

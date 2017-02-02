@@ -1,4 +1,4 @@
-require 'omniauth/windowslive'
+require 'omniauth/groove_music'
 require 'bundler/setup'
 require 'coveralls'
 
