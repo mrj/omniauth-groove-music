@@ -49,13 +49,6 @@ module OmniAuth
         end
       end
 
-      private
-      
-      def build_access_token
-        verifier = request.params["code"]
-        redirect_uri = URI.parse(callback_url).tap { |uri| uri.query = Rack::Utils.parse_query(uri.query).reject { |k,v| %w(code state).include?(k) }.to_query }.to_s
-        client.auth_code.get_token(verifier, {redirect_uri: redirect_uri}.merge(token_params.to_hash(symbolize_keys: true)), deep_symbolize(options.auth_token_params))
-      end
     end
   end
 end

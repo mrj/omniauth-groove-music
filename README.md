@@ -9,4 +9,5 @@ This gem contains the unofficial Groove Music strategy for OmniAuth.
 	end
 
 Create Microsoft Applications at https://apps.dev.microsoft.com
+
 Then register an Application with the Groove API at https://developer.microsoft.com/en-us/dashboard/groove
